@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.52);
+  height: 100vh;
+  display: flex;
+}
+
+.banner {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1166px;
+  width: 100%;
+  box-shadow: 0px 3px 31px #00000029;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+
+  background-image: url('/assets/images/Mask.png');
+  background-size: 1166px 324px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* .banner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 1166px;
+  height: 324px;
+  background: radial-gradient(circle, #4f43b3 0%, #312786 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 77.78%, 55.39% 118.52%, 49.98% 118.52%, 0% 77.78%);
+
+  z-index: 0;
+} */
+
+.content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.rating {
+  position: absolute;
+  top: 29px;
+  left: 33px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.title {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  margin-top: 58px;
+  font-size: 54px;
+  font-weight: 400;
+}
+.description {
+  margin: auto;
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.73;
+  max-width: 550px;
+  line-height: 1.2;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #c4c4c4;
+  color: #333;
+  border: none;
+}
+
+.footnote {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.discount-code {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.code {
+  background-color: #fdb827;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.illustration {
+  text-align: center;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .info {
+    text-align: left;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+  }
+
+  .illustration img {
+    max-width: 300px;
+  }
+}
