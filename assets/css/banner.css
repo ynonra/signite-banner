@@ -191,6 +191,10 @@ body {
   color: white;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1019607843);
 }
+.banner .content .info .buttons .btn .icon {
+  width: 24px;
+  height: 24px;
+}
 @media screen and (max-width: 600px) {
   .banner .content .info .buttons .btn {
     height: 49px;
