@@ -1,6 +1,8 @@
 $max-width: 1166px;
 $max-inner-width: 550px;
 $green: #1ab75e;
+$yellow-400: #dfa809;
+$yellow-600: #efb408;
 
 @mixin mobile {
   @media screen and (max-width: 600px) {
@@ -9,9 +11,9 @@ $green: #1ab75e;
 }
 
 body {
-  font-family: Arial, sans-serif;
   padding: 20px;
   padding: 0;
+  margin: 28px;
   background-color: rgba(0, 0, 0, 0.52);
   height: 100vh;
   display: flex;
@@ -96,6 +98,7 @@ body {
         opacity: 0.73;
         max-width: $max-inner-width;
         line-height: 1.2;
+        font-weight: 300;
         @include mobile {
           max-width: 400px;
           margin-top: 15px;
@@ -130,6 +133,7 @@ body {
         margin: auto;
         font-size: 24px;
         line-height: 28px;
+        font-weight: 500;
         text-align: center;
         max-width: $max-inner-width;
         color: #1b1545;
@@ -144,7 +148,7 @@ body {
           color: $green;
         }
         .yellow {
-          color: #dfa809;
+          color: $yellow-400;
         }
       }
 
@@ -183,6 +187,7 @@ body {
           border: none;
           font-size: 22px;
           font-weight: 600;
+          font-family: inherit;
           cursor: pointer;
           color: white;
           box-shadow: 2px 2px 0 #0000001a;
@@ -205,15 +210,18 @@ body {
             box-shadow: none;
             transform: translate(1px, 1px);
           }
-          &:hover {
-            opacity: 0.7;
-          }
           &.btn-primary {
             background-color: $green;
+            &:hover {
+              background-color: $yellow-600;
+            }
           }
 
           &.btn-secondary {
             background-color: #a3a0c2;
+            &:hover {
+              background-color: rgb(102 84 163);
+            }
           }
         }
       }
@@ -222,6 +230,7 @@ body {
         font-size: 14px;
         margin-top: 33px;
         color: #726f85;
+        letter-spacing: 0.015em;
         @include mobile {
           margin-top: 21px;
           font-size: 11px;
@@ -235,8 +244,8 @@ body {
       box-sizing: border-box;
       font-size: 24px;
       text-align: center;
-      font-weight: bold;
-      background-color: #efb408;
+      font-weight: 600;
+      background-color: $yellow-400;
       width: 100%;
       @include mobile {
         font-size: 17px;

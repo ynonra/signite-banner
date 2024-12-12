@@ -1,0 +1,17 @@
+{
+  "name": "signite-banner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"sass --watch styles.scss:assets/css/banner.css\" \"live-server --port=8080\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "live-server": "^1.2.2"
+  }
+}
